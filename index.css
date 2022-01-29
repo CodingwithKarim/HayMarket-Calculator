@@ -66,6 +66,7 @@ html {
   }
   
   button {
+    display: flex;
     border: 0;
     background: rgba(42,50,113, .28);
     color: #6cacc5;
@@ -76,6 +77,7 @@ html {
     width: 2em;
     height: 2em;
     transition: all 0.5s;
+    justify-content: center;
     
     &:hover {
       background: #201e40;
