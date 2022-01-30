@@ -10,16 +10,9 @@ Array.from(numbers).forEach(function (element) {
   element.addEventListener("click", function (e) {
     sum += e.target.dataset.num;
     document.querySelector(".viewer").innerHTML = +sum;
-    if (isNaN(+sum) || +sum === Number.POSITIVE_INFINITY) {
+    if (isNaN(+sum)) {
+    alert('Not a valid number!')
       clearAll();
-      strikes++;
-      if (strikes === 3) {
-        handleErrors();
-      } else {
-        alert(
-          `You either divided by 0 or double clicked the decimal, thats strike ${strikes}`
-        );
-      }
     }
   });
 });
