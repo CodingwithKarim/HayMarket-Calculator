@@ -60,6 +60,7 @@ function equals() {
     reducerArray.push(+sum);
     reducerArray = [reducerArray.reduce((a, b) => a - b)];
     document.querySelector(".viewer").innerHTML = reducerArray[0];
+    sum = 0
   }
 }
 
